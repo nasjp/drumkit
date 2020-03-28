@@ -1,4 +1,5 @@
 html {
+  user-select: none;
   font-size: 10px; /* px means 'pixels': the base font size is now 10 pixels high  */
   font-family: 'futura', 'Open Sans', sans-serif; /* this should be the rest of the output you got from Google fonts */
   background-color: #D8D8D8;
@@ -19,8 +20,29 @@ h1 {
   text-align: center;
 }
 
-p, li {
-  font-size: 16px;
-  line-height: 2;
-  letter-spacing: 1px;
+.desc {
+  font-size: 20px;
+  text-align: center;
+  margin: 0 0 15px;
+  padding: 0;
+}
+
+.keys {
+  font-size: 25px;
+  display: flex;
+  padding: 0;
+  margin: 0 20px;
+  justify-content: space-between;
+}
+
+.key {
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  text-align: center;
+  line-height: 50px;
+  background-color: #D8D8D8;
+  border: 5px solid black;
 }
