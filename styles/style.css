@@ -8,7 +8,6 @@ html {
   font-size: 10px;
   font-family: 'futura', 'Open Sans', sans-serif;
   background-color: var(--base);
-  background-size: cover;
 }
 
 body {

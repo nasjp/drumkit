@@ -1,8 +1,8 @@
 const playSound = code => {
   const audio = document.querySelector(`audio[data-key="${code}"]`);
   if (!audio) return;
-  const key = document.querySelector(`kbd[data-key="${code}"]`);
 
+  const key = document.querySelector(`kbd[data-key="${code}"]`);
   key.classList.add("playing");
   audio.currentTime = 0;
   audio.play();
@@ -21,4 +21,5 @@ const playSoundOnTapped = e => {
 
 const keys = Array.from(document.querySelectorAll(".key"));
 keys.forEach(e => e.addEventListener("click", playSoundOnClicked));
+
 window.addEventListener("keydown", playSoundOnTapped);
